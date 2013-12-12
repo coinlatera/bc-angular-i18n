@@ -1,0 +1,22 @@
+<html ng-app="test-app">
+  <head>
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../dist/bc-angular-i18n.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+    <h1>String Translator</h1>
+    <p>{{translateString1}}</p>
+    <p>{{translateString2}}</p>
+    <p>{{translateString3}}</p>
+    <p>{{translateString4}}</p>
+
+    <h1>String Translate Filter</h1>
+    <p>{{translateFilter1 | translate:true }}</p>
+    <p>{{translateFilter2 | translate:true }}</p>
+    <p>{{translateFilter3 | translate:true }}</p>
+    <p>{{translateFilter4 | translate:true }}</p>
+  </body>
+</html>
+
