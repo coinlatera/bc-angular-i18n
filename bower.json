@@ -22,7 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.0.8"
+    "angular": "1.2.7"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3",
