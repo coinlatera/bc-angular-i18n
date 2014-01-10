@@ -26,7 +26,7 @@
 (function() {
   angular.module('bc.stringTranslation', []).service("StringTranslation", [
     'Strings', function(Strings) {
-      return this.translate = function(key, language) {
+      this.translate = function(key, language) {
         if (key == null) {
           return '';
         }
@@ -38,6 +38,7 @@
         }
         return Strings[key][language];
       };
+      return this;
     }
   ]);
 
