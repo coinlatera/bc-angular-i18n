@@ -1,4 +1,5 @@
 angular.module('bc.stringTranslation', []).service "StringTranslation", ['Strings', (Strings) ->
+
   this.translate = (key, language) ->
     # No key, no translation
     unless key? then return ''
@@ -11,4 +12,6 @@ angular.module('bc.stringTranslation', []).service "StringTranslation", ['String
 
     # Otherwise return the correct translation
     return Strings[key][language]
+
+  return this
 ]
